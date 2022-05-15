@@ -1,0 +1,151 @@
+/* header */
+.header__section {
+    display: flex;
+    align-items: center;
+}
+
+.header__border {
+    border-bottom: 1px solid #ECECEC;
+}
+
+/* header-logo */
+.logo {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    color: var(--hover-logo-text-color);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.logo__header {
+    color: var(--title-text-color)
+}
+
+
+
+
+/* header-menu */
+
+
+.nav {
+    display: flex;
+
+}
+
+.nav__item {
+    position: relative;
+    display: block;
+    margin-right: 50px;
+
+}
+
+.nav__item:first-child {
+    margin-left: 94px;
+}
+
+.nav__item:last-child {
+    margin-right: 0px;
+}
+
+/* Alternative */
+/* .nav-item:not(:last-child) {
+    margin-right: 50px;
+} */
+
+/* nav-item+.nav-item {
+    margin-left: 50px;
+} */
+
+.nav__page {
+    display: block;
+    font-weight: 500;
+    line-height: 1.14;
+    color: var(--title-text-color);
+    letter-spacing: 0.02em;
+    padding: 32px 0px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav__page--current {
+    color: var(--hover-logo-text-color);
+}
+
+.nav__page--current::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    nav-left: 0;
+    background-color: #2196F3;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+.contact--position {
+    margin-left: auto;
+}
+
+.contact__item {
+    margin-left: 50px;
+}
+
+.contact__item:first-child {
+    margin-left: 0;
+}
+
+/* ALTERNATIVE 
+/* .contact-list:not(:last-child) {
+    margin-right:50px;
+} */
+
+
+
+.contact__details {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--desrcrition-text-color);
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    padding: 10px 0px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav__page:hover,
+.nav__page:focus,
+.contact__details:hover,
+.contact__details:focus {
+    color: var(--hover-logo-text-color);
+}
+
+.contact__svg-envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: #757575;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact__svg-smartphone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: #757575;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact__details:hover > .contact__svg-envelope,
+.contact__details:focus > .contact__svg-envelope,
+.contact__details:hover > .contact__svg-smartphone,
+.contact__details:focus > .contact__svg-smartphone {
+    fill: var(--hover-logo-text-color);
+}

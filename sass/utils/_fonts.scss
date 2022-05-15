@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    /* 1 */
+    font-family:
+        system-ui,
+        -apple-system,
+        /* Firefox supports this but not yet `system-ui` */
+        'Segoe UI',
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif,
+        'Apple Color Emoji',
+        'Segoe UI Emoji';
+    background-color: var(--background-color);
+    color: var(--main-text-color);
+    font-family: 'Roboto',
+        'Open Sans',
+        'Helvetica Neue',
+        sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    /* 2 */
+}

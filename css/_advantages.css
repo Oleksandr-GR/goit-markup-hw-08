@@ -1,0 +1,43 @@
+
+.section--advantages {
+    padding-bottom: 0;
+}
+
+.advantages-list {
+    display: flex;  
+}
+
+.item__image {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background-color: var(--studio-down-background-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.item__svg {
+    width: 70px;
+    height: 70px;
+}
+
+.item__title {
+    font-weight: 700;
+    font-size: inherit;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--title-text-color)
+}
+
+.item__text {
+    width: 270px;
+    height: 75px;
+    margin-top: 10px;
+    line-height: 1.71;
+}
+
+.item:not(:last-child) {
+    margin-right: 30px;
+}

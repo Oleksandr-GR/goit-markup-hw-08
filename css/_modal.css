@@ -1,0 +1,222 @@
+/* modal window */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: var(--backdrop-color);
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* .backdrop.is-hidden .modal {
+ transform: translate(-50%, -50%) scale(0.8);
+
+} */
+
+.modal {
+    width: 528px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal--absolute {
+    position: absolute;
+}
+
+.cross-button {
+    display: flex;
+    position: absolute;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    right: 8px;
+    top: 8px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+
+}
+
+.cross-button__svg {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cross-button:hover .cross-button__svg,
+.cross-button:focus .cross-button__svg {
+    fill: var(--hover-logo-text-color);
+}
+
+.cross-button__icon {
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    margin: 0;
+    fill: #000;
+}
+
+/* modal window --- form */
+
+.form {
+    padding: 40px 40px;
+}
+
+.form__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    color: var(--title-text-color);
+    margin-bottom: 12px;
+}
+
+
+
+.form-block+.form-block {
+    margin-top: 10px;
+}
+
+.form-block__label {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+}
+
+.form-block__input {
+    display: flex;
+    position: relative;
+    margin-top: 4px;
+}
+
+.form-block__field {
+    height: 40px;
+    width: 100%;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-block__image {
+    position: absolute;
+    margin-top: 11px;
+    margin-left: 12px;
+    height: 18px;
+    width: 18px;
+
+}
+
+.form-block__image {
+    fill: var(--title-text-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.form-block__field--comment::placeholder {
+    color: var(--placeholder-color);
+}
+
+.form-block__field--comment {
+    height: 120px;
+    width: 448px;
+    padding: 12px 16px;
+    margin-top: 4px;
+    line-height: 1.17;
+    resize: none;
+}
+
+.form-agreement {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    line-height: 1.715;
+    cursor: pointer;
+}
+
+.form-agreement--position {
+    margin-top: 20px;
+    margin-left: 13px;
+}
+
+.form-agreement__checkbox {
+    appearance: none;
+}
+
+.form-agreement__check {
+    position: absolute;
+    height: 15px;
+    width: 16px;
+    border-radius: 2px;
+    background-size: contain;
+    background-color: #2196F3;
+    fill: var(--background-color);
+    opacity: 0;
+    margin-right: 7px;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-agreement__checked-form {
+    height: 15px;
+    width: 16px;
+    margin-right: 7px;
+}
+
+.form-agreement__checkbox:checked+.form-agreement__check {
+    opacity: 1;
+}
+
+.form-agreement__checkbox:checked+.form-agreement__checked-form {
+    opacity: 0;
+}
+
+.form--button {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    margin: 30px auto 0;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form-agreement__conditions {
+    color: var(--hover-logo-text-color);
+    text-decoration: underline;
+    padding-left: 3px;
+}
+
+.form-block__field:hover,
+.form-block__field:focus {
+    border-color: var(--hover-logo-text-color);
+}
+
+.form-block__field:hover+.form-block__image,
+.form-block__field:focus+svg>.form-block__svg {
+    fill: var(--hover-logo-text-color);
+}
+
+.form-block__svg:hover {
+    fill: var(--hover-logo-text-color);
+}
