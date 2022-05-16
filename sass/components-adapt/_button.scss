@@ -22,12 +22,20 @@
 
     &--footer {
         position: relative;
-        display: flex;
         width: 200px;
         height: 50px;
-        margin-left: 370px;
         padding: 0px;
         top: 20px;
+
+        @media screen and (max-width: 767px) {
+            margin-left: 125px;
+            margin-top: 70px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            margin-left: 370px;
+        }
     }
 
     &__footer-text {

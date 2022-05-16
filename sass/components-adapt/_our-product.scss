@@ -1,0 +1,44 @@
+/* products section */
+
+.review {
+    @media (max-width: 1199px) {
+        display: none;
+    }
+}
+
+.product-list {
+    z-index: 0;
+    display: flex;
+
+    &--position {
+     margin-top: 50px;
+    }
+
+}
+
+
+.product-item {
+    position: relative;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &__name-container {
+        position: absolute;
+        display: block;
+        width: 100%;
+        bottom: 0;
+        background-color: rgba(47, 48, 58, 0.8);
+    }
+
+    &__name {
+        text-transform: uppercase;
+        width: 700;
+        line-height: 1.17;
+        color: #FFFFFF;
+        text-align: center;
+        padding: 27px 0;
+    }
+}
+

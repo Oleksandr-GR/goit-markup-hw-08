@@ -33,10 +33,24 @@ body {
 }
 
 .container {
-  width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .visually-hidden {
@@ -341,17 +355,23 @@ summary {
   justify-content: center;
 }
 
-.contact__details, .contact, .header__section {
+.contact__details, .contact {
   display: flex;
   align-items: center;
 }
 
-.filter-list, .customers {
+.filter-list {
   display: flex;
   justify-content: center;
 }
 
 /* header */
+@media screen and (min-width: 1200px) {
+  .header__section {
+    display: flex;
+    align-items: center;
+  }
+}
 .header__border {
   border-bottom: 1px solid #ECECEC;
 }
@@ -649,8 +669,10 @@ summary {
   padding-bottom: 0;
 }
 
-.advantages-list {
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .advantages-list {
+    display: flex;
+  }
 }
 
 .item__image {
@@ -682,9 +704,15 @@ summary {
 }
 
 /* products section */
+@media (max-width: 1199px) {
+  .review {
+    display: none;
+  }
+}
+
 .product-list {
-  display: flex;
   z-index: 0;
+  display: flex;
 }
 .product-list--position {
   margin-top: 50px;
@@ -717,8 +745,11 @@ summary {
   background-color: var(--studio-down-background-color);
 }
 
-.team-list {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .team-list--margin {
   margin: 50px -15px 0;
@@ -729,6 +760,36 @@ summary {
   text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 480px) {
+  .team-member {
+    height: 622px;
+    width: 450px;
+  }
+  .team-member > img {
+    height: 460px;
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team-member {
+    height: 536px;
+    width: 354px;
+  }
+  .team-member > img {
+    height: 374px;
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-member {
+    height: 428px;
+    width: 270px;
+  }
+  .team-member > img {
+    height: 260px;
+    width: 270px;
+  }
 }
 .team-member--margin {
   margin: 0 15px;
@@ -749,6 +810,15 @@ summary {
 }
 
 /* our customers */
+.customers {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 480px) {
+  .customers {
+    flex-wrap: wrap;
+  }
+}
 .customers--margin {
   margin-top: 50px;
 }
@@ -773,9 +843,6 @@ summary {
 }
 .customers__link:hover .customers__icon, .customers__link:focus .customers__icon {
   fill: var(--hover-logo-text-color);
-}
-.customers__item:not(:first-child) {
-  margin-left: 30px;
 }
 .customers__icon {
   width: 106px;
@@ -861,8 +928,10 @@ summary {
   padding: 60px 0;
 }
 
-.footer {
-  display: flex;
+@media (min-width: 1200px) {
+  .footer {
+    display: flex;
+  }
 }
 
 .address {
@@ -906,12 +975,22 @@ summary {
 }
 .footer-form--position {
   margin-top: 12px;
-  margin-left: 93px;
+  margin-left: 0px;
+}
+@media screen and (min-width: 768px) {
+  .footer-form--position {
+    margin-left: 151px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-form--position {
+    margin-left: 93px;
+  }
 }
 .footer-form__input {
   position: absolute;
   height: 50px;
-  width: 358px;
+  width: 450px;
   box-sizing: border-box;
   color: rgba(255, 255, 255, 0.6);
   left: 0;
@@ -921,6 +1000,11 @@ summary {
   border-radius: 4px;
   background: #2F303A;
   padding: 0px 16px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-form__input {
+    width: 358px;
+  }
 }
 .footer-form__input::-moz-placeholder {
   font-size: 16px;
@@ -940,7 +1024,7 @@ summary {
 
 .button {
   font-weight: 700;
-  font-size: inherit;
+  font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -960,12 +1044,22 @@ summary {
 }
 .button--footer {
   position: relative;
-  display: flex;
   width: 200px;
   height: 50px;
-  margin-left: 370px;
   padding: 0px;
   top: 20px;
+}
+@media screen and (max-width: 767px) {
+  .button--footer {
+    margin-left: 125px;
+    margin-top: 70px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button--footer {
+    display: flex;
+    margin-left: 370px;
+  }
 }
 .button__footer-text {
   position: absolute;

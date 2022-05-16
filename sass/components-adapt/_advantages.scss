@@ -1,0 +1,52 @@
+
+.section--advantages {
+    padding-bottom: 0;
+}
+
+.advantages-list {
+
+
+    @media screen and (min-width: 1200px) {
+    display: flex;
+    }
+ 
+}
+
+.item {
+
+    &__image {
+        @extend %flex-center;
+        width: 270px;
+        height: 120px;
+        background-color: var(--studio-down-background-color);
+        border-radius: 4px;
+        margin-bottom: 30px;
+
+    }
+    
+    &__svg {
+        width: 70px;
+        height: 70px;
+    }
+    
+    &__title {
+        @include font (700, inherit, 1.14);
+        // font-weight: 700;
+        // font-size: inherit;
+        // line-height: 1.14;
+        text-transform: uppercase;
+        color: var(--title-text-color);
+    }
+    
+    &__text {
+        width: 270px;
+        height: 75px;
+        margin-top: 10px;
+        line-height: 1.71;
+    }
+    
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+
+}
