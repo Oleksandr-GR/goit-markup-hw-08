@@ -11,6 +11,9 @@
     max-width: 1600px;
     color: var(--background-color);
     padding: 200px 0px;
+    @media screen and (max-width: 767.5px) {
+        padding: 118px 0;
+    }
 
 
     &__title {
@@ -19,6 +22,13 @@
         text-transform: uppercase;
         max-width: 696px;
         margin: 0px auto;
+
+        @media screen and (max-width: 767.5px) {
+            @include font (900, 26px, 1.62);
+            max-width: 360px;
+            margin: 0px auto;
+    
+        }
     }
 
 }
