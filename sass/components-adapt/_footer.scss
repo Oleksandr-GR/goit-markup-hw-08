@@ -3,13 +3,42 @@
 .footer-section {
     background-color: var(--footer-background-color);
     padding: 60px 0;
+
+    @media screen and (max-width: 1199.5px) {
+        display: block;
+        text-align: center;
+    }
+
 }
 
 .footer {
     @media (min-width: 1200px) {
         display: flex;
+    
     }
+
+    &__addres-social-section {
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    // @media screen and (min-width: 768px) and (max-width: 1199.5px) {
+           
+    //     &__addres-social-section {
+    //         display: flex;
+    //         justify-content: center;
+    //     }
+
+    // }
+
+    
+
 }
+
+
 
 
 .address {
@@ -43,9 +72,23 @@
 
 
 .footer-social-section {
-    margin-top: 12px;
-    margin-left: 70px;
+    margin-top: 60px;
 
+    // @media screen and (max-width: 1199.5px) {
+    //     text-align: center;
+    
+    // }
+    
+    @media screen and (min-width: 768px) and (max-width: 1199.5px) {
+        margin-left: 165px;
+        margin-top: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+        margin-top: 12px;
+    }
+    
     &__text {
         font-weight: 700;
         color: var(--background-color);
@@ -66,15 +109,12 @@
     }
 
     &--position {
-        margin-top: 12px;
+        margin-top: 60px;
         margin-left: 0px;
-
-        @media screen and (min-width: 768px) {
-            margin-left: 151px;
-        }
 
         @media screen and (min-width: 1200px) {
             margin-left: 93px;
+            margin-top: 12px;
         }
     }
 
@@ -92,6 +132,11 @@
         background: #2F303A;
         padding: 0px 16px;
 
+        @media screen and (min-width: 767.5px) and (max-width: 1199.5px) {
+            width: 450px;
+            margin-left: 151px;
+        }
+
         @media screen and (min-width: 1200px) {
             width: 358px;
         }
@@ -105,3 +150,5 @@
 
 
 }
+
+

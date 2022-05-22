@@ -4,33 +4,41 @@
     display: flex;
     justify-content: center;
 
-    @media screen and (max-width: 1199px) {
+
+    @media screen and (max-width: 1199.5px) {
         flex-wrap: wrap;
+
     }
 
 
     &--margin {
+        margin: -15px;
         margin-top: 50px;
     }
 
-    &__link {
-        @extend %flex-center;
-        width: 170px;
-        height: 92px;
-        border: 1px solid #AFB1B8;
-        box-sizing: border-box;
-        border-radius: 4px;
-        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &__item {
+        margin: 15px;
     }
 
     &__link {
         @extend %flex-center;
-        width: 170px;
+        width: 210px;
         height: 92px;
         border: 1px solid #AFB1B8;
         box-sizing: border-box;
         border-radius: 4px;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+
+        @media screen and (min-width: 768px) and (max-width: 1199.5px) {
+            width: 226px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 170px;
+        }
+
     }
 
     &__link:hover,
