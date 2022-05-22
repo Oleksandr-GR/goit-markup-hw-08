@@ -218,17 +218,17 @@
         width: 40px;
     }
 
-    &__icon-cross {
+    &__icon-menu {
         display: none;
         position: absolute;
     }
 
     &.is-open {
         .menu-button__icon-cross {
-            display: block;
+            display: none;
         }
         .menu-button__icon-menu {
-            display: none;
+            display: block;
         }
 
 
@@ -244,9 +244,9 @@
         position: absolute;
         display: none;
         left: 0;
-        top: 60px;
+        top: 59px;
         height: 100%;
-        min-height: 796px;
+        min-height: 100vw;
         width: 100vw;
 
         &.is-open {

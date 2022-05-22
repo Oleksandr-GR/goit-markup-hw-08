@@ -21,7 +21,7 @@
       <div class="header__section container">
         <a href="#" lang="en" class="logo">Web<span class="logo__header">Studio</span></a>
 
-        <div class="menu-container is-open" data-menu id="menu-container">
+        <div class="menu-container" data-menu id="menu-container">
           <nav class="container-nav">
             <ul class="nav">
               <li class="nav__item">
@@ -78,12 +78,12 @@
         >
           <svg class="menu-button__svg-menu" aria-label="переключатель мобильного меню">
             <use
-              class="menu-button__icon-menu"
-              href="./images/icons/symbol-defs.svg#icon-menu"
-            ></use>
-            <use
               class="menu-button__icon-cross"
               href="./images/icons/symbol-defs.svg#icon-close"
+            ></use>
+            <use
+              class="menu-button__icon-menu"
+              href="./images/icons/symbol-defs.svg#icon-menu"
             ></use>
           </svg>
         </button>
@@ -181,7 +181,26 @@
           <h2 class="primary-title">Наша команда</h2>
           <ul class="team-list team-list--margin">
             <li class="team-member team-member--margin">
-              <img src="images/img-team-1.jpg" alt="Игорь Демьяненко" />
+              <picture>
+                <source
+                  srcset="./images/team1-desktop.jpg 1x, ./images/team1-desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/team1-tablet.jpg 1x, ./images/team1-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team1-mobile.jpg 1x, ./images/team1-mobile@2x.jpg 2x"
+                  media="(max-width: 767.5px)"
+                />
+                <img
+                  src="./images/team1-mobile.jpg"
+                  alt="Игорь Демьяненко"
+                  width="100%"
+                  height="auto"
+                />
+              </picture>
               <div class="team-member__details">
                 <h3 class="team-member__name">Игорь Демьяненко</h3>
                 <p class="team-member__position">Product Designer</p>

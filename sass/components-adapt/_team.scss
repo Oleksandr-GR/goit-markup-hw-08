@@ -32,34 +32,38 @@
     margin-top: 30px;
 
     @media screen and (max-width: 767.5px) {
-        height: 622px;
-        width: 450px;
+        // max-height: 622px;
+        // max-width: 450px;
+        flex-basis: calc(100% - 2 * 15px);
 
         & > img {
-        height: 460px;
         width: 100%;
+        height: auto;
         }
     
     }
 
     @media screen and (min-width: 768px) {
-        height: 536px;
-        width: 354px;
+        // height: 536px;
+        // width: 354px;
+
+        flex-basis: calc((100% - 4 * 15px) / 2);
 
         & > img {
-            height: 374px;
-            width: 354px;
+            width: 100%;
+            height: auto
         }
 
     }
 
     @media screen and (min-width: 1200px) {
-        height: 428px;
-        width: 270px;
+        // height: 428px;
+        // width: 270px;
+        flex-basis: calc((100% - 8 * 15px) / 4);
 
         & > img {
-            height: 260px;
-            width: 270px;
+            width: 100%;
+            height: auto
         }
 
     }
