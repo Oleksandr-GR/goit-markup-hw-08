@@ -3,27 +3,51 @@
 .filter-list {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px 4px 0;
 
-    @media screen and (min-width: 768px){
-        align-items: center;
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+
+        &__item:not(:last-child) {
+            margin-right: 8px;
+        }
     }
 
-    &__item:not(:last-child) {
-        margin-right: 8px;
+    &__item {
+        margin: 15px 4px 0;
     }
+
 }
 
 .progect-list {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
-    margin-top: 50px;
+    margin-top: 40px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199.5px) {
+        margin-top: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 50px;
+    }
+
 }
 
 .progect {
-    width: 370px;
+    width: 100%;
     border: 1px solid #EEEEEE;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) and (max-width: 1199.5px) {
+    width:calc((100% - 4 * 15px) / 2)
+    }
+
+    @media screen and (min-width: 1200px) {
+        width:calc((100% - 6 * 15px) / 3)
+
+    }
 
     &--margin {
         margin: 15px;
@@ -50,6 +74,7 @@
     &__image {
         position: relative;
         overflow: hidden;
+        z-index: 0;
     }
 
     &__image::after {

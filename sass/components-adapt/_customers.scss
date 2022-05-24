@@ -13,7 +13,10 @@
 
     &--margin {
         margin: -15px;
-        margin-top: 50px;
+        margin-top: 30px;
+        @media screen and (min-width: 1200px) {
+            margin-top: 50px;
+        }
     }
 
     &__item {

@@ -11,8 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" href="./css/modern-normalize.css" />
-    <link rel="stylesheet" href="./css/styles.css" /> -->
+
     <link rel="stylesheet" href="./css-adapt/main.min.css" />
   </head>
   <body>
@@ -153,19 +152,33 @@
           <h2 class="primary-title">Чем мы занимаемся</h2>
           <ul class="product-list product-list--position">
             <li class="product-item">
-              <img src="images/img-1.jpg" width="370" height="294" alt="Десктопные приложения" />
+              <picture>
+                <source srcset="./images/img-1.jpg 1x, ./images/img-1@2x.jpg 2x" />
+                <img
+                  src="./images/img-1.jpg"
+                  alt="Десктопные приложения"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <div class="product-item__name-container">
                 <h3 class="product-item__name">Десктопные приложения</h3>
               </div>
             </li>
             <li class="product-item">
-              <img src="images/img-2.jpg" width="370" height="294" alt="Мобильные приложения" />
+              <picture>
+                <source srcset="./images/img-2.jpg 1x, ./images/img-2@2x.jpg 2x" />
+                <img src="./images/img-2.jpg" alt="Мобильные приложения" width="370" height="294" />
+              </picture>
               <div class="product-item__name-container">
                 <h3 class="product-item__name">Мобильные приложения</h3>
               </div>
             </li>
             <li class="product-item">
-              <img src="images/img-3.jpg" width="370" height="294" alt="Дизайнерские решения" />
+              <picture>
+                <source srcset="./images/img-3.jpg 1x, ./images/img-3@2x.jpg 2x" />
+                <img src="./images/img-3.jpg" alt="Дизайнерские решения" width="370" height="294" />
+              </picture>
               <div class="product-item__name-container">
                 <h3 class="product-item__name">Дизайнерские решения</h3>
               </div>
