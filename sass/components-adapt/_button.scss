@@ -28,6 +28,7 @@
         height: 50px;
         padding: 0px;
         top: 20px;
+    
 
         @media screen and (max-width: 1199.5px) {
             margin: 0 auto;
@@ -64,6 +65,7 @@
         letter-spacing: inherit;
         padding: 6px 22px;
         border-color: var(--studio-down-background-color);
+        box-shadow: none
     }
 
     &--filter:hover,
@@ -71,7 +73,7 @@
         background-color: var(--hover-logo-text-color);
         color: var(--background-color);
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-            0px 1px 2px rgba(0, 0, 0, 0.08),
-            0px 2px 2px rgba(0, 0, 0, 0.12);
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
     }
 }

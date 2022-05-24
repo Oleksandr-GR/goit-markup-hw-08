@@ -34,8 +34,7 @@
 
     &__name {
         text-transform: uppercase;
-        width: 700;
-        line-height: 1.17;
+        @include font (700, 14px, 1.14);
         color: #FFFFFF;
         text-align: center;
         padding: 27px 0;
