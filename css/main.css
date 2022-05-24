@@ -651,15 +651,12 @@ summary {
   .menu-social {
     flex-wrap: wrap;
     width: 200px;
-    padding-left: 0;
-    left: 50%;
-    transform: translate(-50%) scale(1);
   }
 }
 
 /* studio hero title */
 .hero {
-  background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-our-company_480x400@1x.jpg);
+  background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-our-company_480x400@1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -670,30 +667,30 @@ summary {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-our-company_480x400@2x.jpg);
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-our-company_480x400@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
     padding: 200px 0;
-    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-our-company_1600x600@1x.jpg);
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-our-company_1600x600@1x.jpg);
     max-width: 1600px;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-our-company_1600x600@2x.jpg);
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-our-company_1600x600@2x.jpg);
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767.5px) {
   .hero {
     padding: 118px 0;
-    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-our-company_768x400@1x.jpg);
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-our-company_768x400@1x.jpg);
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767.5px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767.5px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767.5px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (max-width: 767.5px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-our-company_768x400@2x.jpg);
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-our-company_768x400@2x.jpg);
   }
 }
 .hero__title {
